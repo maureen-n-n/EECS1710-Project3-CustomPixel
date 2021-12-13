@@ -8,8 +8,7 @@
 **/
 PImage img;
 ArrayList<Dot> dots;
-int scaler = 20; // will use only every 10th pixel from the image
-boolean flashlight;
+int scaler = 20; // will use only every 20th pixel from the image
 
 void setup() {
   size(1000, 1000, P2D);  
@@ -39,9 +38,3 @@ void mousePressed(){
   }
 }
 
-void keyPressed(){
-  if (key==' '){
-    flashlight=!flashlight; 
-    println("hi");
-  }
-}
